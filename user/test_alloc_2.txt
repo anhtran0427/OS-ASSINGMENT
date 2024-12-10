@@ -1,0 +1,172 @@
+Time slot   0---------------------------------
+ld_routine
+	Loaded a process at input/proc/alloc_full, PID: 1 PRIO: 0
+	CPU 1: Dispatched process  1 at 0
+SIZE 300
+ALLOC SUCCESS 0 299
+
+STATISTIC ----------------------------
+RGID 0: rg_start 0 rg_end 299 vm_id 0
+VM_AREA 0 vm_start 0 vm_end 511
+COUNT FREE LIST : 0
+VM_AREA 1 vm_start 3145727 vm_end 3145727
+COUNT FREE LIST : 0
+-------------------------------
+
+	Loaded a process at input/proc/alloc_full_2, PID: 2 PRIO: 0
+Time slot   1---------------------------------
+	CPU 0: Dispatched process  2 at 1
+SIZE 200
+ALLOC SUCCESS 3145729 3145528
+Time slot   2---------------------------------
+	CPU 1: Put process  1 to run queue at 2
+	CPU 1: Dispatched process  1 at 2
+SIZE 300
+ALLOC SUCCESS 300 599
+SIZE 56
+ALLOC SUCCESS 3145529 3145472
+Time slot   3---------------------------------
+
+STATISTIC ----------------------------
+RGID 1: rg_start 300 rg_end 599 vm_id 0
+VM_AREA 0 vm_start 0 vm_end 767
+COUNT FREE LIST : 0
+VM_AREA 1 vm_start 3145727 vm_end 3145727
+COUNT FREE LIST : 0
+-------------------------------
+
+	CPU 0: Put process  2 to run queue at 3
+	CPU 0: Dispatched process  2 at 3
+SIZE 300
+ALLOC SUCCESS 3145473 3145172
+Time slot   4---------------------------------
+	CPU 1: Put process  1 to run queue at 4
+	CPU 1: Dispatched process  1 at 4
+SIZE 400
+ALLOC SUCCESS 600 999
+SIZE 500
+ALLOC SUCCESS 0 499
+Time slot   5---------------------------------
+
+STATISTIC ----------------------------
+RGID 2: rg_start 600 rg_end 999 vm_id 0
+VM_AREA 0 vm_start 0 vm_end 1023
+COUNT FREE LIST : 0
+VM_AREA 1 vm_start 3145727 vm_end 3145727
+COUNT FREE LIST : 0
+-------------------------------
+
+	CPU 0: Put process  2 to run queue at 5
+	CPU 0: Dispatched process  2 at 5
+
+STATISTIC ----------------------------
+RGID 4: rg_start 0 rg_end 499 vm_id 0
+VM_AREA 0 vm_start 0 vm_end 511
+COUNT FREE LIST : 0
+VM_AREA 1 vm_start 3145727 vm_end 3144960
+COUNT FREE LIST : 0
+-------------------------------
+
+Time slot   6---------------------------------
+	CPU 1: Put process  1 to run queue at 6
+	CPU 1: Dispatched process  1 at 6
+Time slot   7---------------------------------
+	CPU 0: Put process  2 to run queue at 7
+	CPU 0: Dispatched process  2 at 7
+ALLOC SUCCESS 0 299
+Time slot   8---------------------------------
+	CPU 1: Put process  1 to run queue at 8
+	CPU 1: Dispatched process  1 at 8
+
+STATISTIC ----------------------------
+RGID 2: rg_start 600 rg_end 999 vm_id 0
+VM_AREA 0 vm_start 0 vm_end 1023
+COUNT FREE LIST : 2
+VM_AREA 1 vm_start 3145727 vm_end 3145727
+COUNT FREE LIST : 0
+-------------------------------
+
+
+STATISTIC ----------------------------
+RGID 5: rg_start 0 rg_end 299 vm_id 0
+VM_AREA 0 vm_start 0 vm_end 511
+COUNT FREE LIST : 1
+VM_AREA 1 vm_start 3145727 vm_end 3144960
+COUNT FREE LIST : 0
+-------------------------------
+
+Time slot   9---------------------------------
+SIZE 400
+ALLOC SUCCESS 1000 1399
+	CPU 0: Put process  2 to run queue at 9
+	CPU 0: Dispatched process  2 at 9
+write region=5 offset=10 value=120
+PAGE TABLE FOR PROCESS 2************************
+print_pgtbl for vmaid 0: 0 - 511
+00000000: 80000008
+00000004: 80000007
+print_pgtbl for vmaid 1: 3145727 - 3144960
+00049148: 80000002
+00049144: 80000005
+00049140: 80000004
+********************************************
+
+********************MEMPHY DUMP******************
+frame: 9----------------------
+frame: 10----------------------
+frame: 7----------------------
+frame: 8----------------------
+frame: 6----------------------
+frame: 4----------------------
+frame: 5----------------------
+frame: 3----------------------
+frame: 2----------------------
+frame: 0----------------------
+frame: 1----------------------
+***************************************************
+
+Time slot  10---------------------------------
+write region=2 offset=10 value=111
+PAGE TABLE FOR PROCESS 2************************
+print_pgtbl for vmaid 0: 0 - 511
+00000000: 80000008
+00000004: 80000007
+print_pgtbl for vmaid 1: 3145727 - 3144960
+00049148: 80000002
+00049144: 80000005
+00049140: 80000004
+********************************************
+
+********************MEMPHY DUMP******************
+frame: 9----------------------
+	CPU 1: Put process  1 to run queue at 10
+frame: 10----------------------
+frame: 7----------------------
+	CPU 1: Dispatched process  1 at 10
+frame: 8----------------------
+address 0x0000080a: 120
+frame: 6----------------------
+frame: 4----------------------
+frame: 5----------------------
+frame: 3----------------------
+frame: 2----------------------
+frame: 0----------------------
+frame: 1----------------------
+***************************************************
+
+
+STATISTIC ----------------------------
+RGID 3: rg_start 1000 rg_end 1399 vm_id 0
+VM_AREA 0 vm_start 0 vm_end 1535
+COUNT FREE LIST : 2
+VM_AREA 1 vm_start 3145727 vm_end 3145727
+COUNT FREE LIST : 0
+-------------------------------
+
+ALLOC SUCCESS 300 399
+Time slot  11---------------------------------
+	CPU 0: Processed  2 has finished at 11
+	CPU 0 stopped at 11
+Time slot  12---------------------------------
+	CPU 1: Processed  1 has finished at 12
+	CPU 1 stopped at 12

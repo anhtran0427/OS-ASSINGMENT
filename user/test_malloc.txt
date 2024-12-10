@@ -1,0 +1,162 @@
+Time slot   0---------------------------------
+ld_routine
+	Loaded a process at input/proc/malloc_full, PID: 1 PRIO: 0
+Time slot   1---------------------------------
+	CPU 0: Dispatched process  1 at 1
+SIZE 300
+ALLOC SUCCESS 2561 2260
+Time slot   2---------------------------------
+	CPU 0: Put process  1 to run queue at 2
+	CPU 0: Dispatched process  1 at 2
+
+STATISTIC ----------------------------
+RGID 0: rg_start 2559 rg_end 2260 vm_id 1
+VM_AREA 0 vm_start 0 vm_end 0
+COUNT FREE LIST : 0
+VM_AREA 1 vm_start 2559 vm_end 2048
+COUNT FREE LIST : 0
+-------------------------------
+
+Time slot   3---------------------------------
+	CPU 0: Put process  1 to run queue at 3
+	CPU 0: Dispatched process  1 at 3
+SIZE 300
+ALLOC SUCCESS 2261 1960
+Time slot   4---------------------------------
+	CPU 0: Put process  1 to run queue at 4
+	CPU 0: Dispatched process  1 at 4
+
+STATISTIC ----------------------------
+RGID 1: rg_start 2259 rg_end 1960 vm_id 1
+VM_AREA 0 vm_start 0 vm_end 0
+COUNT FREE LIST : 0
+VM_AREA 1 vm_start 2559 vm_end 1792
+COUNT FREE LIST : 0
+-------------------------------
+
+Time slot   5---------------------------------
+	CPU 0: Put process  1 to run queue at 5
+	CPU 0: Dispatched process  1 at 5
+SIZE 400
+ALLOC SUCCESS 1961 1560
+Time slot   6---------------------------------
+	CPU 0: Put process  1 to run queue at 6
+	CPU 0: Dispatched process  1 at 6
+
+STATISTIC ----------------------------
+RGID 2: rg_start 1959 rg_end 1560 vm_id 1
+VM_AREA 0 vm_start 0 vm_end 0
+COUNT FREE LIST : 0
+VM_AREA 1 vm_start 2559 vm_end 1536
+COUNT FREE LIST : 0
+-------------------------------
+
+Time slot   7---------------------------------
+	CPU 0: Put process  1 to run queue at 7
+	CPU 0: Dispatched process  1 at 7
+Time slot   8---------------------------------
+	CPU 0: Put process  1 to run queue at 8
+	CPU 0: Dispatched process  1 at 8
+
+STATISTIC ----------------------------
+RGID 2: rg_start 1959 rg_end 1560 vm_id 1
+VM_AREA 0 vm_start 0 vm_end 0
+COUNT FREE LIST : 0
+VM_AREA 1 vm_start 2559 vm_end 1536
+COUNT FREE LIST : 1
+-------------------------------
+
+Time slot   9---------------------------------
+	CPU 0: Put process  1 to run queue at 9
+	CPU 0: Dispatched process  1 at 9
+SIZE 400
+ALLOC SUCCESS 1561 1160
+Time slot  10---------------------------------
+	CPU 0: Put process  1 to run queue at 10
+	CPU 0: Dispatched process  1 at 10
+write region=0 offset=5 value=-12
+PAGE TABLE FOR PROCESS 1************************
+print_pgtbl for vmaid 0: 0 - 0
+print_pgtbl for vmaid 1: 2559 - 1024
+00000036: 40000000
+00000032: 40000020
+00000028: 80000002
+00000024: 80000003
+00000020: 80000000
+00000016: 80000001
+********************************************
+
+********************MEMPHY DUMP******************
+frame: 1----------------------
+frame: 0----------------------
+frame: 3----------------------
+frame: 2----------------------
+***************************************************
+
+Invalid
+Time slot  11---------------------------------
+	CPU 0: Put process  1 to run queue at 11
+	CPU 0: Dispatched process  1 at 11
+
+STATISTIC ----------------------------
+RGID 1: rg_start 1559 rg_end 1160 vm_id 1
+VM_AREA 0 vm_start 0 vm_end 0
+COUNT FREE LIST : 0
+VM_AREA 1 vm_start 2559 vm_end 1024
+COUNT FREE LIST : 1
+-------------------------------
+
+Time slot  12---------------------------------
+	CPU 0: Put process  1 to run queue at 12
+	CPU 0: Dispatched process  1 at 12
+1569
+read region=1 offset=10 value=0
+PAGE TABLE FOR PROCESS 1************************
+print_pgtbl for vmaid 0: 0 - 0
+print_pgtbl for vmaid 1: 2559 - 1024
+00000036: 40000000
+00000032: 40000020
+00000028: 80000002
+00000024: 80000003
+00000020: 80000000
+00000016: 80000001
+********************************************
+
+********************MEMPHY DUMP******************
+frame: 1----------------------
+frame: 0----------------------
+frame: 3----------------------
+frame: 2----------------------
+***************************************************
+
+Time slot  13---------------------------------
+	CPU 0: Put process  1 to run queue at 13
+	CPU 0: Dispatched process  1 at 13
+ALLOC SUCCESS 2261 2160
+Time slot  14---------------------------------
+	CPU 0: Put process  1 to run queue at 14
+	CPU 0: Dispatched process  1 at 14
+
+STATISTIC ----------------------------
+RGID 4: rg_start 2259 rg_end 2160 vm_id 1
+VM_AREA 0 vm_start 0 vm_end 0
+COUNT FREE LIST : 0
+VM_AREA 1 vm_start 2559 vm_end 1024
+COUNT FREE LIST : 1
+-------------------------------
+
+Time slot  15---------------------------------
+	CPU 0: Put process  1 to run queue at 15
+	CPU 0: Dispatched process  1 at 15
+
+STATISTIC ----------------------------
+RGID 0: rg_start 2559 rg_end 2260 vm_id 1
+VM_AREA 0 vm_start 0 vm_end 0
+COUNT FREE LIST : 0
+VM_AREA 1 vm_start 2559 vm_end 1024
+COUNT FREE LIST : 1
+-------------------------------
+
+Time slot  16---------------------------------
+	CPU 0: Processed  1 has finished at 16
+	CPU 0 stopped at 16

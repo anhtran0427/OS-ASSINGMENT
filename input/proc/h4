@@ -1,0 +1,9 @@
+1 8
+malloc 512 1
+malloc 256 2
+malloc 246 3
+alloc 1024 4
+alloc 10 5
+free 2
+free 3
+alloc 100 5

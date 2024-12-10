@@ -1,0 +1,19 @@
+Time slot   0---------------------------------
+ld_routine
+	Loaded a process at input/proc/h2, PID: 1 PRIO: 0
+Time slot   1---------------------------------
+	CPU 0: Dispatched process  1 at 1
+SIZE 500
+ALLOC SUCCESS 0 499
+Time slot   2---------------------------------
+	CPU 0: Put process  1 to run queue at 2
+	CPU 0: Dispatched process  1 at 2
+SIZE 500
+ALLOC SUCCESS 500 999
+Time slot   3---------------------------------
+	CPU 0: Put process  1 to run queue at 3
+	CPU 0: Dispatched process  1 at 3
+SIZE 100
+Time slot   4---------------------------------
+	CPU 0: Processed  1 has finished at 4
+	CPU 0 stopped at 4

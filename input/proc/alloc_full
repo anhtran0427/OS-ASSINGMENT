@@ -1,0 +1,14 @@
+0 12
+alloc 300 0
+address 0
+alloc 300 1
+address 1
+alloc 400 2
+address 2
+free 0
+free 1
+address 2
+alloc 400 3
+address 3 
+alloc 100 4
+address 4

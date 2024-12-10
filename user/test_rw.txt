@@ -1,0 +1,50 @@
+Time slot   0---------------------------------
+ld_routine
+	Loaded a process at input/proc/r0, PID: 1 PRIO: 0
+Time slot   1---------------------------------
+	CPU 0: Dispatched process  1 at 1
+SIZE 100
+ALLOC SUCCESS 0 99
+Time slot   2---------------------------------
+	CPU 0: Put process  1 to run queue at 2
+	CPU 0: Dispatched process  1 at 2
+SIZE 200
+ALLOC SUCCESS 100 299
+Time slot   3---------------------------------
+	CPU 0: Put process  1 to run queue at 3
+	CPU 0: Dispatched process  1 at 3
+write region=1 offset=20 value=102
+PAGE TABLE FOR PROCESS 1************************
+print_pgtbl for vmaid 0: 0 - 511
+00000000: 40000040
+00000004: 80000000
+print_pgtbl for vmaid 1: 3145727 - 3145727
+********************************************
+
+********************MEMPHY DUMP******************
+frame: 0----------------------
+***************************************************
+
+Time slot   4---------------------------------
+	CPU 0: Put process  1 to run queue at 4
+	CPU 0: Dispatched process  1 at 4
+20
+read region=1 offset=20 value=102
+PAGE TABLE FOR PROCESS 1************************
+print_pgtbl for vmaid 0: 0 - 511
+00000000: 80000000
+00000004: 40000060
+print_pgtbl for vmaid 1: 3145727 - 3145727
+********************************************
+
+********************MEMPHY DUMP******************
+frame: 0----------------------
+address 0x00000014: 102
+***************************************************
+
+Time slot   5---------------------------------
+	CPU 0: Put process  1 to run queue at 5
+	CPU 0: Dispatched process  1 at 5
+Time slot   6---------------------------------
+	CPU 0: Processed  1 has finished at 6
+	CPU 0 stopped at 6

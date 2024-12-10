@@ -1,0 +1,53 @@
+Time slot   0---------------------------------
+ld_routine
+Time slot   1---------------------------------
+Time slot   2---------------------------------
+	Loaded a process at input/proc/custom_mlq, PID: 1 PRIO: 139
+	CPU 0: Dispatched process  1 at 2
+Time slot   3---------------------------------
+	CPU 0: Put process  1 to run queue at 3
+	CPU 0: Dispatched process  1 at 3
+	Loaded a process at input/proc/custom_mlq, PID: 2 PRIO: 138
+Time slot   4---------------------------------
+	CPU 0: Put process  1 to run queue at 4
+	CPU 0: Dispatched process  2 at 4
+Time slot   5---------------------------------
+	CPU 0: Put process  2 to run queue at 5
+	CPU 0: Dispatched process  2 at 5
+Time slot   6---------------------------------
+	CPU 0: Put process  2 to run queue at 6
+	CPU 0: Dispatched process  2 at 6
+Time slot   7---------------------------------
+	CPU 0: Put process  2 to run queue at 7
+	CPU 0: Dispatched process  2 at 7
+Time slot   8---------------------------------
+	CPU 0: Put process  2 to run queue at 8
+	CPU 0: Dispatched process  1 at 8
+Time slot   9---------------------------------
+	CPU 0: Put process  1 to run queue at 9
+	CPU 0: Dispatched process  2 at 9
+Time slot  10---------------------------------
+	Loaded a process at input/proc/custom_mlq, PID: 3 PRIO: 137
+	CPU 0: Processed  2 has finished at 10
+	CPU 0: Dispatched process  3 at 10
+Time slot  11---------------------------------
+	CPU 0: Put process  3 to run queue at 11
+	CPU 0: Dispatched process  3 at 11
+Time slot  12---------------------------------
+	CPU 0: Put process  3 to run queue at 12
+	CPU 0: Dispatched process  3 at 12
+Time slot  13---------------------------------
+	CPU 0: Put process  3 to run queue at 13
+	CPU 0: Dispatched process  1 at 13
+Time slot  14---------------------------------
+	CPU 0: Put process  1 to run queue at 14
+	CPU 0: Dispatched process  3 at 14
+Time slot  15---------------------------------
+	CPU 0: Put process  3 to run queue at 15
+	CPU 0: Dispatched process  3 at 15
+Time slot  16---------------------------------
+	CPU 0: Processed  3 has finished at 16
+	CPU 0: Dispatched process  1 at 16
+Time slot  17---------------------------------
+	CPU 0: Processed  1 has finished at 17
+	CPU 0 stopped at 17

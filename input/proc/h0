@@ -1,0 +1,15 @@
+1 14
+malloc 300 1
+malloc 212 2
+malloc 500 3
+malloc 100 4
+write 121 4 10
+read 4 10 7
+write 110 1 266
+alloc 200 5
+alloc 56 6
+free 5
+free 3
+read 3 400 8
+malloc 400 3
+alloc 200 5

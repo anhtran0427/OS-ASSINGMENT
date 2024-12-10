@@ -1,0 +1,24 @@
+Time slot   0---------------------------------
+ld_routine
+Time slot   1---------------------------------
+	Loaded a process at input/proc/a1, PID: 1 PRIO: 2
+	CPU 1: Dispatched process  1 at 1
+SIZE 200
+ALLOC SUCCESS 0 199
+Time slot   2---------------------------------
+SIZE 100
+ALLOC SUCCESS 200 299
+	Loaded a process at input/proc/m1, PID: 2 PRIO: 1
+	CPU 0: Dispatched process  2 at 2
+SIZE 200
+find_victim
+Time slot   3---------------------------------
+SIZE 56
+ALLOC SUCCESS 300 355
+SIZE 200
+find_victim
+	CPU 1: Processed  1 has finished at 4
+	CPU 1 stopped at 4
+Time slot   4---------------------------------
+	CPU 0: Processed  2 has finished at 4
+	CPU 0 stopped at 4

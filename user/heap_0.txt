@@ -1,0 +1,139 @@
+Time slot   0---------------------------------
+ld_routine
+	Loaded a process at input/proc/h0, PID: 1 PRIO: 0
+	CPU 0: Dispatched process  1 at 0
+SIZE 300
+ALLOC SUCCESS 2049 1748
+Time slot   1---------------------------------
+	CPU 0: Put process  1 to run queue at 1
+	CPU 0: Dispatched process  1 at 1
+SIZE 212
+ALLOC SUCCESS 1749 1536
+Time slot   2---------------------------------
+	CPU 0: Put process  1 to run queue at 2
+	CPU 0: Dispatched process  1 at 2
+SIZE 500
+ALLOC SUCCESS 1537 1036
+Time slot   3---------------------------------
+	CPU 0: Put process  1 to run queue at 3
+	CPU 0: Dispatched process  1 at 3
+SIZE 100
+ALLOC SUCCESS 1037 936
+Time slot   4---------------------------------
+	CPU 0: Put process  1 to run queue at 4
+	CPU 0: Dispatched process  1 at 4
+write region=4 offset=10 value=121
+PAGE TABLE FOR PROCESS 1************************
+print_pgtbl for vmaid 0: 0 - 0
+print_pgtbl for vmaid 1: 2047 - 768
+00000028: 40000000
+00000024: 80000000
+00000020: 80000003
+00000016: 80000002
+00000012: 80000001
+********************************************
+
+********************MEMPHY DUMP******************
+frame: 1----------------------
+frame: 2----------------------
+frame: 3----------------------
+frame: 0----------------------
+***************************************************
+
+Time slot   5---------------------------------
+	CPU 0: Put process  1 to run queue at 5
+	CPU 0: Dispatched process  1 at 5
+1045
+read region=4 offset=10 value=121
+PAGE TABLE FOR PROCESS 1************************
+print_pgtbl for vmaid 0: 0 - 0
+print_pgtbl for vmaid 1: 2047 - 768
+00000028: 40000000
+00000024: 80000000
+00000020: 80000003
+00000016: 80000002
+00000012: 80000001
+********************************************
+
+********************MEMPHY DUMP******************
+frame: 1----------------------
+frame: 2----------------------
+address 0x00000215: 121
+frame: 3----------------------
+frame: 0----------------------
+***************************************************
+
+Time slot   6---------------------------------
+	CPU 0: Put process  1 to run queue at 6
+	CPU 0: Dispatched process  1 at 6
+write region=1 offset=266 value=110
+PAGE TABLE FOR PROCESS 1************************
+print_pgtbl for vmaid 0: 0 - 0
+print_pgtbl for vmaid 1: 2047 - 768
+00000028: 40000000
+00000024: 80000000
+00000020: 80000003
+00000016: 80000002
+00000012: 80000001
+********************************************
+
+********************MEMPHY DUMP******************
+frame: 1----------------------
+frame: 2----------------------
+address 0x00000215: 121
+frame: 3----------------------
+frame: 0----------------------
+***************************************************
+
+Invalid
+Time slot   7---------------------------------
+	CPU 0: Put process  1 to run queue at 7
+	CPU 0: Dispatched process  1 at 7
+SIZE 200
+ALLOC SUCCESS 0 199
+Time slot   8---------------------------------
+	CPU 0: Put process  1 to run queue at 8
+	CPU 0: Dispatched process  1 at 8
+SIZE 56
+ALLOC SUCCESS 200 255
+Time slot   9---------------------------------
+	CPU 0: Put process  1 to run queue at 9
+	CPU 0: Dispatched process  1 at 9
+Time slot  10---------------------------------
+	CPU 0: Put process  1 to run queue at 10
+	CPU 0: Dispatched process  1 at 10
+Time slot  11---------------------------------
+	CPU 0: Put process  1 to run queue at 11
+	CPU 0: Dispatched process  1 at 11
+Invalid
+read region=3 offset=400 value=84
+PAGE TABLE FOR PROCESS 1************************
+print_pgtbl for vmaid 0: 0 - 255
+00000000: 80000000
+print_pgtbl for vmaid 1: 2047 - 768
+00000028: 40000000
+00000024: 40000020
+00000020: 80000003
+00000016: 80000002
+00000012: 80000001
+********************************************
+
+********************MEMPHY DUMP******************
+frame: 0----------------------
+frame: 1----------------------
+frame: 2----------------------
+address 0x00000215: 121
+frame: 3----------------------
+***************************************************
+
+Time slot  12---------------------------------
+	CPU 0: Put process  1 to run queue at 12
+	CPU 0: Dispatched process  1 at 12
+ALLOC SUCCESS 1537 1136
+Time slot  13---------------------------------
+	CPU 0: Put process  1 to run queue at 13
+	CPU 0: Dispatched process  1 at 13
+ALLOC SUCCESS 0 199
+Time slot  14---------------------------------
+	CPU 0: Processed  1 has finished at 14
+	CPU 0 stopped at 14

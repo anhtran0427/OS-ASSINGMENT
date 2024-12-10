@@ -1,0 +1,16 @@
+0 15
+malloc 300 0
+address 0
+malloc 300 1
+address 1
+malloc 400 2
+address 2
+alloc 40 25
+free 1
+address 2
+malloc 400 1
+write 76 0 5
+address 1
+read 1 10 3 
+malloc 100 4
+address 4
